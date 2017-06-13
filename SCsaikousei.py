@@ -57,7 +57,7 @@ while y <= h:
         
         #hukugen image copy
         s = s.reshape(patch_size[1],patch_size[0])
-        s = dst_array[y:y+patch_size[1], x:x+patch_size[0]]
+        dst_array[y:y+patch_size[1], x:x+patch_size[0]] = s
                 
         x+=patch_size[0]
     y+=patch_size[1]
